@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="75dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:layout_height="match_parent"
+    >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jjmomanyi.extremedev.ems.AddItem"
+    tools:showIn="@layout/activity_add_item">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentTop="true">
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="EMS KENYA"
+                android:textSize="30sp"
+                android:textColor="@color/blue"
+                android:id="@+id/texView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/relativeLayout"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sender Details"
+                android:textColor="@color/green"
+                android:id="@+id/textView5"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_below="@+id/editText"
+                android:hint="ID"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:inputType="number"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:hint="Phone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:id="@+id/relativeLayout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Receiver Details"
+                android:id="@+id/textView6"
+                android:textColor="@color/green"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_below="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:hint="Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:layout_below="@+id/editText4"
+                android:layout_centerHorizontal="true"
+                android:hint="ID" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText6"
+                android:layout_below="@+id/editText5"
+                android:layout_centerHorizontal="true"
+                android:hint="Destination" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ItemID:"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/editText7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EMS_201632582928"
+            android:id="@+id/textView8"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Phone" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECORD"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/button"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+             />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>
